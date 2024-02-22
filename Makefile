@@ -3,7 +3,7 @@
 .PHONY: docs help test
 
 SHELL:=bash
-REGISTRY?=quay.io
+REGISTRY?=spacem
 OWNER?=jupyter
 
 # Enable BuildKit for Docker build
@@ -14,14 +14,7 @@ ALL_IMAGES:= \
 	docker-stacks-foundation \
 	base-notebook \
 	minimal-notebook \
-	r-notebook \
-	julia-notebook \
-	scipy-notebook \
-	tensorflow-notebook \
-	pytorch-notebook \
-	datascience-notebook \
-	pyspark-notebook \
-	all-spark-notebook
+	scipy-notebook 
 
 
 
